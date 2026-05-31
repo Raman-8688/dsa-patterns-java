@@ -11,7 +11,7 @@ public class TwoSumTwoPointers {
        while(left<right){
             int sum=nums[left]+nums[right];
             if(sum==target){
-                return new int[] {nums[left],nums[right]};
+                return new int[] {left+1,right+1};
 
             }
             else if(sum<target){
