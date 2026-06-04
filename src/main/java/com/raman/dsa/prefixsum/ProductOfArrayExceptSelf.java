@@ -18,11 +18,28 @@ public class ProductOfArrayExceptSelf {
         return result;
 
     }
+    public int[] productExceptSelfOptimal(int[] nums) {
+        int n=nums.length;
+        int[] res=new int[n];
+        res[0]=1;
+        for(int i=1;i<n;i++){
+            res[i]=res[i-1]*nums[i-1];
+        }
+        int rightpro=1;
+        for(int r=n-1;r>=0;r--){
+            res[r]=res[r]*rightpro;
+            rightpro*=nums[r];
+        }
+        return res;
+
+    }
 
 
     public static void main(String[] args) {
         int nums[] = {1, 2, 3, 4};
         int result[] = new ProductOfArrayExceptSelf().productExceptSelfBrute(nums);
+        int result1[] = new ProductOfArrayExceptSelf().productExceptSelfOptimal(nums);
         System.out.println("BruteForce:"+ Arrays.toString(result));
+        System.out.println("BruteForce:"+ Arrays.toString(result1));
     }
 }
