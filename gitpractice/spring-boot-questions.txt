@@ -8,3 +8,9 @@ A2: It combines @Configuration, @EnableAutoConfiguration, @ComponentScan.
 
 Q3: What is Spring Boot Starter?
 A3: Dependency descriptor that bundles common dependencies for specific features.
+
+What is Spring Boot?
+Answer: Spring Boot is a framework built on top of Spring that simplifies application development
+by providing auto-configuration, embedded servers (Tomcat/Jetty), and starter dependencies.
+MNC-level insight: It enables rapid development of production-ready applications with minimal boilerplate.
+--added by micro
