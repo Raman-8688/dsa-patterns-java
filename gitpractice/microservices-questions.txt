@@ -1,0 +1,7 @@
+=== Microservices Interview Questions ===
+
+Q1: What are microservices?
+A1: Architectural style where application is composed of small, independent services.
+
+Q2: What is API Gateway?
+A2: Single entry point for all clients, handles routing, auth, rate limiting.

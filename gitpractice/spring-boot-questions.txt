@@ -1,0 +1,7 @@
+=== Spring Boot Interview Questions ===
+
+Q1: What is Spring Boot?
+A1: Spring Boot is a framework that simplifies Spring application development with auto-configuration.
+
+Q2: What does @SpringBootApplication do?
+A2: It combines @Configuration, @EnableAutoConfiguration, @ComponentScan.
