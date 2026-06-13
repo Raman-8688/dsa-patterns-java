@@ -5,3 +5,21 @@ A1: Architectural style where application is composed of small, independent serv
 
 Q2: What is API Gateway?
 A2: Single entry point for all clients, handles routing, auth, rate limiting.
+
+3. What are microservices?
+   Answer: Microservices are small, loosely coupled services that focus on a single business capability.
+   Each service has its own data store, logic, and deployment pipeline,
+   making it independently scalable and deployable.
+
+   MNC-level insight: Highlight that microservices enable agility,
+  fault isolation, and technology diversity. For example, one service
+  can use Spring Boot with PostgreSQL, while another uses Node.
+  js with MongoDB, without impacting the overall system.Added by micro branch
+
+4. Difference between monolithic and microservices architecture
+   Answer:
+   Monolithic: Single codebase, tightly coupled, difficult to scale, one failure can affect the entire system.
+   Microservices: Modular, independently deployable, fault-tolerant, easier to scale specific services.
+   MNC-level insight: Stress that microservices align with DevOps and CI/CD pipelines,
+   enabling faster releases and cloud-native scalability.
+   Added By Micro Branch
