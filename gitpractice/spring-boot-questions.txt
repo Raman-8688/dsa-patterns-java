@@ -5,3 +5,6 @@ A1: Spring Boot is a framework that simplifies Spring application development wi
 
 Q2: What does @SpringBootApplication do?
 A2: It combines @Configuration, @EnableAutoConfiguration, @ComponentScan.
+
+Q3: What is Spring Boot Actuator?
+A3: Provides production-ready features like health checks, metrics, monitoring.
