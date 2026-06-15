@@ -1,0 +1,60 @@
+Core Two Pointer Patterns in Arrays :
+
+Here are the main categories you must master.
+Each category has classic problems that interviewers love:
+
+Pair Sum Problems :
+    Two Sum in sorted array
+    Count pairs with given sum
+    Check if pair exists with difference K
+
+Duplicate Handling
+    Remove duplicates from sorted array
+    Move zeros to end
+    Remove element in-place
+
+Reversal & Rearrangement
+    Reverse array/string in-place
+    Sort colors (Dutch National Flag)
+    Partition array around pivot
+
+Triplet & Subset Problems
+    3-Sum (sum to zero)
+    3-Sum closest to target
+    Count triplets with sum less than target
+
+Window & Subarray Problems
+    Longest substring with K distinct characters
+    Minimum window substring
+    Subarray product less than K
+
+Comparison Between Arrays
+    Merge two sorted arrays
+    Intersection of two arrays
+    Find common elements in three sorted arrays
+
+Max/Min Optimization
+    Container With Most Water
+    Trapping Rain Water (variation with two pointers)
+    Maximize sum of min pairs
+
+🎯 Most Asked MNC-Level Questions
+
+    Two Sum in sorted array
+    Remove duplicates from sorted array
+    3-Sum problem
+    Container With Most Water
+    Dutch National Flag problem
+    Merge two sorted arrays
+    Minimum window substring
+
+🧩 Quick Recognition Checklist
+When you see a question, ask:
+
+Do I need to scan from both ends? → Two pointers.
+
+Do I need to maintain a window (start & end)? → Two pointers + sliding window.
+
+Do I need to compare/merge sorted arrays? → Two pointers.
+
+If yes → it’s almost certainly a two pointer problem
