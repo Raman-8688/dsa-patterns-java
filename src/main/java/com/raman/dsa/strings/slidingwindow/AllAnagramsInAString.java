@@ -1,8 +1,6 @@
 package com.raman.dsa.strings.slidingwindow;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class AllAnagramsInAString {
 
@@ -30,7 +28,48 @@ public class AllAnagramsInAString {
             return res;
         }
 
-        // Optimal Sliding Window Approach
+
+
+    public static List<Integer> findAnagrams(String s, String p) {
+        List<Integer> res = new ArrayList<>();
+        if(s.length() < p.length()) return res;
+
+        Map<Character,Integer> pMap = new HashMap<>();
+        Map<Character,Integer> sMap= new HashMap<>();
+
+        for(char c: p.toCharArray()){
+            pMap.put(c, pMap.getOrDefault(c,0)+1);
+        }
+
+        int left =0,count = p.length();
+        for(int right=0;right<s.length();right++){
+            char ch = s.charAt(right);
+            sMap.put(ch,sMap.getOrDefault(ch,0)+1);
+
+            if(pMap.containsKey(ch) && sMap.get(ch)<= pMap.get(ch)){
+                count--;
+            }
+
+            if(right-left+1>p.length()){
+                char leftChar = s.charAt(left);
+                if(pMap.containsKey(leftChar) && sMap.get(leftChar) <= pMap.get(leftChar)){
+                    count++;
+                }
+                sMap.put(leftChar, sMap.get(leftChar)-1);
+                left++;
+            }
+
+            if(count==0){
+                res.add(left);
+            }
+        }
+
+        return res;
+
+    }
+
+
+    // Optimal Sliding Window Approach
         public static List<Integer> findAnagramsOptimal(String s, String p) {
             List<Integer> res = new ArrayList<>();
             int n = s.length();
@@ -80,6 +119,11 @@ public class AllAnagramsInAString {
             System.out.println("\nInput: s = " + s2 + ", p = " + p2);
             System.out.println("Brute Force Output: " + findAnagramsBrute(s2, p2));
             System.out.println("Optimal Output: " + findAnagramsOptimal(s2, p2));
+
+
+            System.out.println("\nInput: s = " + s2 + ", p = " + p2);
+            System.out.println("Brute Force Output: " + findAnagrams(s2, p2));
+            System.out.println("Optimal Output: " + findAnagrams(s2, p2));
             // Expected: [0, 1, 2]
         }
 
