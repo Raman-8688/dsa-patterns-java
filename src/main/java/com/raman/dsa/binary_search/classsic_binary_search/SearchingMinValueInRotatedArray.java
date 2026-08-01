@@ -3,15 +3,15 @@ package com.raman.dsa.binary_search.classsic_binary_search;
 public class SearchingMinValueInRotatedArray {
 
     public static void main(String[] args){
-        int nums[]={4,5,6,7,1,2,3};
-        int nums1[]={4,5,6,7,0,1,2,3};
-        int nums2[]={2,3,4,5,6,7,8,1};
-        int nums3[]={5,6,7,1,2,3,4};
+        int[] nums1 = {3, 4, 5, 1, 2};
+        int[] nums2 = {2, 2, 2, 0, 1};
+        int[] nums3 = {11, 13, 15, 17};
+        int[] nums4 = {1};
 
-        System.out.println("given Target at :"+searchArray(nums));
-        System.out.println("given Target at :"+searchArray(nums1));
-        System.out.println("given Target at :"+searchArray(nums2));
-        System.out.println("given Target at :"+searchArray(nums3));
+        System.out.println("given Target at :" + searchArray(nums1)); // Expected: 1
+        System.out.println("given Target at :" + searchArray(nums2)); // Expected: 0
+        System.out.println("given Target at :" + searchArray(nums3)); // Expected: 11
+        System.out.println("given Target at :" + searchArray(nums4)); // Expected: 1
     }
     public static int searchArray(int nums[]){
         int left=0;
