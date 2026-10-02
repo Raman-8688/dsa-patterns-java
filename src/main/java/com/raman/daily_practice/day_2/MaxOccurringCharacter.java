@@ -5,7 +5,8 @@ import java.util.Map;
 
 public class MaxOccurringCharacter {
     public static void main(String args[]){
-        String str1="Ramannnnn Raghavan";
+        String str="Ramannnnn Raghavan";
+        String str1="programming";
         System.out.println("Given string:"+str1+" Maximum repeated character is : "+maxRepeat(str1));
     }
 
