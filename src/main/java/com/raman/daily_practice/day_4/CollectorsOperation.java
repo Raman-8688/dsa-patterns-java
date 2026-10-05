@@ -13,6 +13,20 @@ public class CollectorsOperation {
                 .map(String::toUpperCase)
                 .collect(Collectors.toList());
 
+        List<String> result1 = list.stream()
+                        .filter(s->s.length()<5)
+                        .map(String::toUpperCase)
+                        .toList();
+
+
+
         System.out.println(result);
+        System.out.println(result1);
+
+        /**
+         * Remove duplicate we can use the set for remove duplicate or distinct()
+         * so if you use the direct set for the collect then you don't need to use again distinct method
+         */
+
     }
 }
