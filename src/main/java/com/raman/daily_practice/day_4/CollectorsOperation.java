@@ -2,6 +2,7 @@ package com.raman.daily_practice.day_4;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 public class CollectorsOperation {
@@ -27,6 +28,12 @@ public class CollectorsOperation {
          * Remove duplicate we can use the set for remove duplicate or distinct()
          * so if you use the direct set for the collect then you don't need to use again distinct method
          */
+
+        List<Integer> nums = List.of(33,22,2,3,4,5,1,2,8,2,3,4);
+        Set<Integer> setResults=nums.stream()
+                .sorted()
+                .collect(Collectors.toSet());
+        System.out.println(setResults);
 
     }
 }
