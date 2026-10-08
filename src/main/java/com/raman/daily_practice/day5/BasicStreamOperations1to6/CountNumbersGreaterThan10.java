@@ -7,6 +7,7 @@ public class CountNumbersGreaterThan10 {
     public static void main(String[] args){
         /**
          * Count numbers greater than 10
+         * cont() is terminal operation that return a Long
          */
 
         List<Integer> list = Arrays.asList(20,1,23,1,22,3,4,5,33);
