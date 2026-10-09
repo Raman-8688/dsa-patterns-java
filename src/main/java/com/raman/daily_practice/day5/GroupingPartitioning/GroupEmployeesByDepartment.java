@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Random;
 import java.util.stream.Collectors;
 
-class Employee{
+ class Employee{
     Long id;
      String name;
      String depot;
